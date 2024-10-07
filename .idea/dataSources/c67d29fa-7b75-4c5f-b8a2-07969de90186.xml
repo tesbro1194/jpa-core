@@ -1002,7 +1002,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </schema>
     <schema id="290" parent="1" name="memo">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-10-07.06:51:00</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-10-07.07:23:07</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="291" parent="1" name="mysql">
@@ -1035,5 +1035,42 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     <user id="298" parent="1" name="root">
       <Host>localhost</Host>
     </user>
+    <table id="299" parent="290" name="memo">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <column id="300" parent="299" name="id">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="301" parent="299" name="contents">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(500)|0s</StoredType>
+    </column>
+    <column id="302" parent="299" name="username">
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(255)|0s</StoredType>
+    </column>
+    <index id="303" parent="299" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="304" parent="299" name="UK_n3qr0n9og6katwb84yqcia5ib">
+      <ColNames>username</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="305" parent="299" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="306" parent="299" name="UK_n3qr0n9og6katwb84yqcia5ib">
+      <UnderlyingIndexName>UK_n3qr0n9og6katwb84yqcia5ib</UnderlyingIndexName>
+    </key>
   </database-model>
 </dataSource>
