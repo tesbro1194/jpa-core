@@ -8,8 +8,6 @@ import jakarta.persistence.*;
 public class Memo {
     // @Id : 테이블의 pk를 지정, 식별자 역할을 한다. Entity 클래스는 반드시 @Id 가 붙은 필드를 가져야함. 즉 필수 에노테이션
     @Id
-    // 해당 필드, 즉 칼럼을 auto_increment 하겠다
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     // nullable: null 허용 여부
